@@ -1,8 +1,14 @@
 package practice;
 
+import practice.arrays.SomeArrays;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+
+        // TODO: Print Arrays from Class MyArrays
+        SomeArrays myArrays = new SomeArrays();
+        myArrays.display();
+
     }
 }
