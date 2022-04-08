@@ -6,7 +6,7 @@ public class Main {
 
         // TODO: Display current date and time
         CurrentDataAndTime currentDataAndTime = new CurrentDataAndTime();
-        System.out.println("CURRENT DATE AND TIME:");
+        System.out.println("DATE AND TIME:");
         currentDataAndTime.display();
 
     }
