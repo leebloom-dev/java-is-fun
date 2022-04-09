@@ -6,7 +6,8 @@ public class YokohamaHighSchool {
 
     /* FIELDS */
     private String student;
-    private String[] classRoster = new String[10];
+    private final int classSize = 10;
+    private String[] classRoster = new String[classSize];
 
     /* CONSTRUCTORS */
     public YokohamaHighSchool() {
@@ -33,32 +34,46 @@ public class YokohamaHighSchool {
     public void createRoster() {
 
         Scanner input = new Scanner(System.in);
+        String lineBreak = "------------------\n";
 
-        System.out.println("Enter Student Names.");
-        System.out.println("Enter 'x' to quit.");
+        System.out.println("ENTER STUDENT NAMES");
+        System.out.println("Enter 'x' to quit\n");
+        System.out.println(lineBreak);
 
-        // Get student names
+        String[] roster = new String[classSize];
         for (int i = 0; i < classRoster.length; i++) {
 
-            System.out.print("Enter name for student " + i + ": ");
+            // user enters student name
+            System.out.print("Student " + i + ": ");
             String name = input.next();
 
+            // quit loop
             if (name.equals("x")) {
                 break;
             }
 
-        }
+            setStudent(name);
 
-        // Close input stream
+            // add name to roster
+            roster[i] = getStudent();
+            setClassRoster(roster);
+        }
         input.close();
 
+        System.out.println(lineBreak);
     }
 
     public void displayClassRoster() {
 
-        for (String name : classRoster) {
-            System.out.println(name);
+        String lineBreak = "------------------\n";
+
+        System.out.println("CLASS ROSTER");
+        System.out.println(lineBreak);
+
+        for (int i = 0; i < classRoster.length; i++) {
+            System.out.println("Student " + i + ": " + classRoster[i]);
         }
+        System.out.println(lineBreak);
 
     }
 

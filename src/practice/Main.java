@@ -10,10 +10,12 @@ public class Main {
         // TODO: 4. Concatenate Strings
         // TODO: 5. Create an algorithm to prove string is palindrome
 
-        // Part 1
         YokohamaHighSchool yokohamaHighSchool = new YokohamaHighSchool();
-//        yokohamaHighSchool.setStudent("Nagato");
-//        System.out.println(yokohamaHighSchool.getStudent());
+
+        // Part 1
+//        yokohamaHighSchool.setStudent("Yamato");
+//        String studentName = yokohamaHighSchool.getStudent();
+//        System.out.println(studentName);
 
         // Part 2
         yokohamaHighSchool.createRoster();
