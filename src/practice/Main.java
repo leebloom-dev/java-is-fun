@@ -18,8 +18,22 @@ public class Main {
 //        System.out.println(studentName);
 
         // Part 2
-        yokohamaHighSchool.createRoster();
-        yokohamaHighSchool.displayClassRoster();
+//        yokohamaHighSchool.createRoster();
+//        yokohamaHighSchool.displayClassRoster();
+
+        // Part 3
+//        String firstName = "Orochimaru";
+//        System.out.println(firstName.length());
+
+        // Part 4
+//        String productName = "Wings Of Fire ";
+//        String productCost = "$4.99";
+//        System.out.println(productName.concat(productCost));
+
+        // Part 5
+        Palindrome palindrome = new Palindrome();
+        String answer = palindrome.isPalindrome();
+        System.out.println(answer);
     }
 
 }
