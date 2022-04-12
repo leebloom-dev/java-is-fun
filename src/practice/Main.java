@@ -1,5 +1,6 @@
 package practice;
 
+import practice.felidae.pantherinae.panthera.SnowLeopard;
 import practice.felidae.pantherinae.panthera.Tiger;
 
 public class Main {
@@ -14,9 +15,18 @@ public class Main {
         * */
 
         Tiger tiger = new Tiger();
-        tiger.setHasStripes(true);
         tiger.display();
 
+        SnowLeopard snowLeopard = new SnowLeopard();
+        snowLeopard.display();
+
+        // TODO: Use @Override for Lion
+        // TODO: Use @Override for Leopard
+        // TODO: Use @Override for Jaguar
+        // TODO: Use @Override for SundaCloudedLeopard
+        // TODO: Use @Override for CloudedLeopard
+        // TODO: Use @Override for Bobcat
+        // TODO: Use @Override for DomesticCat
     }
     
 }

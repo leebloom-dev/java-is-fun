@@ -2,16 +2,15 @@ package practice.felidae.pantherinae.panthera;
 
 import practice.felidae.Felidae;
 
-public class Tiger extends Felidae {
+public class SnowLeopard extends Felidae {
 
-    /* CONSTRUCTORS */
-    public Tiger() {
+    public SnowLeopard() {
     }
 
     /* METHODS */
     @Override
     public void display() {
-        System.out.println("TIGERS");
+        System.out.println("SNOW LEOPARD");
         super.getData();
         super.display();
     }
