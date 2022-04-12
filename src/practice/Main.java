@@ -16,6 +16,9 @@ public class Main {
         bicycle.changeGear(2);
         bicycle.display();
 
+        bicycle.applyBrakes(5);
+        bicycle.display();
+
     }
     
 }

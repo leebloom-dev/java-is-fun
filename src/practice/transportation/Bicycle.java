@@ -30,6 +30,6 @@ public class Bicycle implements Vehicle {
 
     /* METHODS */
     public void display() {
-        System.out.println("speed: " + speed + "\ngear: " + gear);
+        System.out.println("\nspeed: " + speed + "\ngear: " + gear + "\n");
     }
 }
