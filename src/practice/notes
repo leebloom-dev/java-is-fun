@@ -1,23 +1,60 @@
-NOTES ON INTERFACES
----------------------
-1. Similar to abstract classes, interfaces can't be used to
-create objects.
+DESIGN PATTERNS - Model View Controller
+======================================
+Model View Controller (MVC) is a design pattern for developing user
+interfaces that divide the programs logic into three components.
 
-2. Interface methods don't have a body of code.
+--------------------------------------
+MODEL
+An object that performs logistics to update the controller if any data
+changes.
 
-3. Must override all methods when implementing an interface.
+--------------------------------------
+VIEW
+Represents the visual component of the data that the model contains.
 
-4. Interface methods default as abstract and public
+--------------------------------------
+CONTROLLER
+Performs actions between the model and the view. It controls how the
+data flows into the model and update the view whenever data changes.
+Therefore, the model and the view will only communicate with the
+controller.
 
-5. Interface attributes default as public, static, and final.
+======================================
+WHAT ARE WE BUILDING?
 
-6. No constructors
+A simple program using the MVC design pattern to display some information
+about a student. The user should be able to:
+    - input the student's name
+    - input the student's roll
+    - display the student's name
+    - display the student's roll
 
-=======================
+======================================
+DESIGN
 
-WHY USE INTERFACES?
-1. Security - hide certain details and only show important details
-of an object.
+StudentIdCard
+    +main(): void
+    +retrieveStudentFromDatabase(): Student
 
-2. Java doesn't support "multiple inheritance" except for interfaces.
-A class can implement multiple interfaces.
+StudentController
+    -model: Student
+    -view: StudentView
+
+    +StudentController()
+    +setStudentName(): void
+    +getStudentName(): String
+    +setStudentRoll(): void
+    +getStudentRoll(): String
+    +updateView(): void
+
+StudentView
+    +printStudentDetails(): void
+
+StudentModel
+    -name: String
+    -roll: String
+
+    +getName(): String
+    +setName(): void
+    +getRoll(): String
+    +setRoll(): void
