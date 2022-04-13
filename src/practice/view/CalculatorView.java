@@ -46,7 +46,7 @@ public class CalculatorView {
         calcSolution.setText(Integer.toString(solution));
     }
 
-    public void addCalculation(ActionListener listenForCalcButton) {
+    public void addCalculationListener(ActionListener listenForCalcButton) {
         calculationButton.addActionListener(listenForCalcButton);
     }
 
