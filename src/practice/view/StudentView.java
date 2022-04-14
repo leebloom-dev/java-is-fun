@@ -6,7 +6,6 @@ package practice.view;
 * whomever needs it.
 * */
 
-import jdk.swing.interop.SwingInterOpUtils;
 
 public class StudentView {
 
