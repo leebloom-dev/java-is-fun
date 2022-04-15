@@ -1,21 +1,18 @@
-Java HashMap
-======================================
+JAVA STATIC METHOD
+============================
 
-HashMaps are able to store items as key/value pairs. Accessing the
-item can be done by using a "key" as an index and the key can be
-a different data type (example: String)
+The keyword static allows methods to be independent of
+any instance created for the class.
 
-======================================
+Static is a non-access modifier for methods and attributes.
+Static methods/attributes can be accessed without creating an
+object.
 
-HOW DO WE USE HASHMAPS?
+============================
 
-import java.util.HashMap; // import the HashMap Class
-
-HashMap<String, String> capitalCities = new HashMap<String, String>();
-
-======================================
-
-WHY USE HASHMAPS?
-
-A HashMap will allow you to store items with unique identifiers. More
-efficient to retrieve items instead of using a search tree.
+Why Should We Use Static?
+- uses memory resources more efficiently. (Efficient Memory Management)
+- not using any instance variable.
+- code to be shared by all instance methods
+- don't want method to be changed or overridden.
+- writing utility classes that shouldn't be changed.
