@@ -1,40 +1,33 @@
 package practice;
 
-import practice.controller.StudentController;
-import practice.model.StudentModel;
-import practice.view.StudentView;
+import java.util.HashMap;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        // Fetch student record based on his roll from database
-        StudentModel model = retrieveStudentFromDatabase();
+        // First create a HashMap object
+        HashMap<String, String> capitalCities = new HashMap<String, String>();
 
-        // Create view to write student details in console
-        StudentView view = new StudentView();
+        // Add key/values (Country, City)
+        capitalCities.put("Seoul", "South Korea");
+        capitalCities.put("Tokyo", "Japan");
+        capitalCities.put("Washington D.C.", "United States of America");
 
-        StudentController controller = new StudentController(model, view);
+        // Print all HashMap key/value pairs
+        System.out.println(capitalCities);
 
-        controller.displayStudentInfo();
+        // Access the value using a key
+        System.out.println("Japan Capital: " + capitalCities.get("Tokyo"));
 
-        // Update model data
-        controller.setStudentName("Lee");
+        // Remove an item
+        capitalCities.remove("Washington D.C.");
+        System.out.println(capitalCities);
 
-        controller.displayStudentInfo();
+        // Clear all items in a HashMap
+        capitalCities.clear();
+        System.out.println(capitalCities);
 
-    }
-
-    private static StudentModel retrieveStudentFromDatabase() {
-        // Create a new object
-        StudentModel student = new StudentModel();
-
-        // Set student information
-        student.setName("Sana");
-        student.setRoll("Class President");
-
-        // Returns the object
-        return student;
     }
 
 }
