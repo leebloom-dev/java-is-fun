@@ -28,7 +28,7 @@ public class AttendanceController {
 
     /* METHODS */
     public void updateStudents() {
-        attendanceView.printAttendance(attendanceModel.getStudents());
+        attendanceView.printStudents(attendanceModel.getStudents());
     }
 
 }
