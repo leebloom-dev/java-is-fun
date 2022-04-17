@@ -34,22 +34,22 @@ DESIGN
 
 Main
     +main(): void
-    +retrieveStudentFromDatabase(): StudentModel
+    +retrieveStudentFromDatabase(): Student
 
 AttendanceController
-    -view: AttendanceView
     -model: AttendanceModel
+    -view: AttendanceView
 
-    +AttendanceController()
-    +getStudent(): HashMap<Integer, String>
-    +setStudent(): void
+    +StudentController()
+    +setStudents(): void
+    +getStudents(): HashMap<String, String>
     +updateView(): void
 
 AttendanceView
-    +printAttendance(): void
+    +printStudents(): void
 
 AttendanceModel
-    -student: HashMap<Integer, String>
+    -students: HashMap<String, String>
 
-    +getStudent(): HashMap<Integer, String>
-    +setStudent(): void
+    +getStudents(): HashMap<String, String>
+    +setStudents(): void
