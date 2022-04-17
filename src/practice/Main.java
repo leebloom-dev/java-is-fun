@@ -1,9 +1,12 @@
 package practice;
 
+<<<<<<< HEAD
 import practice.controller.AttendanceController;
 import practice.model.AttendanceModel;
 import practice.view.AttendanceView;
 
+=======
+>>>>>>> 55d9adc3f484ed4f22ba9472275817bac38a4c17
 import java.util.HashMap;
 
 public class Main {

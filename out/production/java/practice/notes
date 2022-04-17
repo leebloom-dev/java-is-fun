@@ -1,35 +1,20 @@
-DESIGN PATTERNS - Model View Controller
+Java HashMap
 ======================================
-Model View Controller (MVC) is a design pattern for developing user
-interfaces that divide the programs logic into three components.
 
---------------------------------------
-MODEL
-An object that performs logistics to update the controller if any data
-changes.
-
---------------------------------------
-VIEW
-Represents the visual component of the data that the model contains.
-
---------------------------------------
-CONTROLLER
-Performs actions between the model and the view. It controls how the
-data flows into the model and update the view whenever data changes.
-Therefore, the model and the view will only communicate with the
-controller.
+HashMaps are able to store items as key/value pairs. Accessing the
+item can be done by using a "key" as an index and the key can be
+a different data type (example: String)
 
 ======================================
-WHAT ARE WE BUILDING?
 
-A simple program using the MVC design pattern to display some information
-about a student. The user should be able to:
-    - input the student's name
-    - input the student's roll
-    - display the student's name
-    - display the student's roll
+HOW DO WE USE HASHMAPS?
+
+import java.util.HashMap; // import the HashMap Class
+
+HashMap<String, String> capitalCities = new HashMap<String, String>();
 
 ======================================
+<<<<<<< HEAD
 DESIGN
 
 Main
@@ -53,3 +38,10 @@ AttendanceModel
 
     +getStudent(): HashMap<Integer, String>
     +setStudent(): void
+=======
+
+WHY USE HASHMAPS?
+
+A HashMap will allow you to store items with unique identifiers. More
+efficient to retrieve items instead of using a search tree.
+>>>>>>> 55d9adc3f484ed4f22ba9472275817bac38a4c17
