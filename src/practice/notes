@@ -32,29 +32,16 @@ about a student. The user should be able to:
 ======================================
 DESIGN
 
-StudentIdCard
+Main
     +main(): void
-    +retrieveStudentFromDatabase(): Student
 
-StudentController
-    -model: Student
-    -view: StudentView
+AttendanceController
+    -view: AttendanceView
+    -model: AttendanceModel
 
-    +StudentController()
-    +setStudentName(): void
-    +getStudentName(): String
-    +setStudentRoll(): void
-    +getStudentRoll(): String
-    +updateView(): void
 
-StudentView
-    +printStudentDetails(): void
+AttendanceView
+    +printAttendance(): void
 
-StudentModel
-    -name: String
-    -roll: String
-
-    +getName(): String
-    +setName(): void
-    +getRoll(): String
-    +setRoll(): void
+AttendanceModel
+    -name: Hash
